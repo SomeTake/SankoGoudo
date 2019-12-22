@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="source\Scene\SceneGame.cpp" />
+    <ClCompile Include="source\Scene\SceneManager.cpp" />
+    <ClCompile Include="source\Scene\SceneResult.cpp" />
+    <ClCompile Include="source\Scene\SceneTitle.cpp" />
+    <ClCompile Include="source\Sound\Sound.cpp" />
+    <ClCompile Include="source\Input\Input.cpp" />
+    <ClCompile Include="source\Input\GamePad.cpp" />
+    <ClCompile Include="source\Input\Keyboard.cpp" />
+    <ClCompile Include="source\System\Screen.cpp" />
+    <ClCompile Include="source\System\Game.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="source\Scene\SceneGame.h" />
+    <ClInclude Include="source\Scene\SceneManager.h" />
+    <ClInclude Include="source\Scene\SceneResult.h" />
+    <ClInclude Include="source\Scene\SceneTitle.h" />
+    <ClInclude Include="source\DesignPattern\BaseState.h" />
+    <ClInclude Include="source\DesignPattern\BaseSingleton.h" />
+    <ClInclude Include="source\Sound\Sound.h" />
+    <ClInclude Include="source\Input\Input.h" />
+    <ClInclude Include="source\Input\GamePad.h" />
+    <ClInclude Include="source\Input\Keyboard.h" />
+    <ClInclude Include="source\System\Screen.h" />
+    <ClInclude Include="source\System\Game.h" />
+  </ItemGroup>
+</Project>
