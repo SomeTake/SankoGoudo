@@ -5,6 +5,7 @@
 //
 //=============================================================================
 #include "Game.h"
+#include "TaskManager.h"
 
 //==========================================
 // コンストラクタ
@@ -24,6 +25,8 @@ Game::~Game()
 {
 	SAFE_DELETE(manager);
 	SAFE_DELETE(screen);
+
+	TaskManager::Instance()->AllDelete();
 }
 
 //==========================================
@@ -32,6 +35,8 @@ Game::~Game()
 void Game::Update()
 {
 	manager->Update();
+
+	TaskManager::Instance()->Update();
 }
 
 //==========================================

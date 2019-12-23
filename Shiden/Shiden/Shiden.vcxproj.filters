@@ -12,6 +12,10 @@
     <ClCompile Include="source\Input\Keyboard.cpp" />
     <ClCompile Include="source\System\Screen.cpp" />
     <ClCompile Include="source\System\Game.cpp" />
+    <ClCompile Include="source\System\TaskManager.cpp" />
+    <ClCompile Include="source\System\DelayedTask.cpp" />
+    <ClCompile Include="source\System\Task.cpp" />
+    <ClCompile Include="source\System\RegularTask.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h" />
@@ -27,5 +31,9 @@
     <ClInclude Include="source\Input\Keyboard.h" />
     <ClInclude Include="source\System\Screen.h" />
     <ClInclude Include="source\System\Game.h" />
+    <ClInclude Include="source\System\TaskManager.h" />
+    <ClInclude Include="source\System\Task.h" />
+    <ClInclude Include="source\System\DelayedTask.h" />
+    <ClInclude Include="source\System\RegularTask.h" />
   </ItemGroup>
 </Project>
