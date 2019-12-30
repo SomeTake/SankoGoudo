@@ -6,6 +6,9 @@
 //=============================================================================
 #include "Game.h"
 #include "TaskManager.h"
+#include "../Core/Tween.h"
+
+Tween* Tween::mInstance = NULL;
 
 //==========================================
 // コンストラクタ
@@ -16,6 +19,7 @@ Game::Game(HINSTANCE hInstance, HWND hWnd)
 
 	manager = new SceneManager();
 	screen = new Screen(D3DXVECTOR2((float)SCREEN_WIDTH, (float)SCREEN_HEIGHT), D3DXVECTOR2(0.0f, 0.0f));
+	Tween::mInstance = new Tween();
 }
 
 //==========================================
@@ -25,6 +29,7 @@ Game::~Game()
 {
 	SAFE_DELETE(manager);
 	SAFE_DELETE(screen);
+	SAFE_DELETE(Tween::mInstance);
 
 	TaskManager::Instance()->AllDelete();
 }
@@ -35,6 +40,7 @@ Game::~Game()
 void Game::Update()
 {
 	manager->Update();
+	Tween::mInstance->Update();
 
 	TaskManager::Instance()->Update();
 }

@@ -125,6 +125,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="source\Core\GameObject.cpp" />
+    <ClCompile Include="source\Core\Quaternion.cpp" />
+    <ClCompile Include="source\Core\Transform.cpp" />
+    <ClCompile Include="source\Core\Tween.cpp" />
+    <ClCompile Include="source\Core\Tweener.cpp" />
     <ClCompile Include="source\Input\GamePad.cpp" />
     <ClCompile Include="source\Input\Input.cpp" />
     <ClCompile Include="source\Input\Keyboard.cpp" />
@@ -142,6 +147,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h" />
+    <ClInclude Include="source\Core\Easing.h" />
+    <ClInclude Include="source\Core\GameObject.h" />
+    <ClInclude Include="source\Core\MyMath.h" />
+    <ClInclude Include="source\Core\Quaternion.h" />
+    <ClInclude Include="source\Core\Transform.h" />
+    <ClInclude Include="source\Core\Tween.h" />
+    <ClInclude Include="source\Core\Tweener.h" />
     <ClInclude Include="source\DesignPattern\BaseSingleton.h" />
     <ClInclude Include="source\DesignPattern\BaseState.h" />
     <ClInclude Include="source\Input\GamePad.h" />

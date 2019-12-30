@@ -21,7 +21,11 @@
 #include <stdio.h>
 #include <assert.h>
 #include <time.h>
+#include <cmath>
 
+#include "source/Core/MyMath.h"
+#include "source/Core/Quaternion.h"
+#include "source/Core/Transform.h"
 #include "source/DesignPattern/BaseState.h"
 
 //*****************************************************************************

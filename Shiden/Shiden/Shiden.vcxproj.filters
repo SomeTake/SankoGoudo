@@ -16,6 +16,11 @@
     <ClCompile Include="source\System\DelayedTask.cpp" />
     <ClCompile Include="source\System\Task.cpp" />
     <ClCompile Include="source\System\RegularTask.cpp" />
+    <ClCompile Include="source\Core\Transform.cpp" />
+    <ClCompile Include="source\Core\Quaternion.cpp" />
+    <ClCompile Include="source\Core\GameObject.cpp" />
+    <ClCompile Include="source\Core\Tween.cpp" />
+    <ClCompile Include="source\Core\Tweener.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h" />
@@ -35,5 +40,12 @@
     <ClInclude Include="source\System\Task.h" />
     <ClInclude Include="source\System\DelayedTask.h" />
     <ClInclude Include="source\System\RegularTask.h" />
+    <ClInclude Include="source\Core\Transform.h" />
+    <ClInclude Include="source\Core\Quaternion.h" />
+    <ClInclude Include="source\Core\MyMath.h" />
+    <ClInclude Include="source\Core\GameObject.h" />
+    <ClInclude Include="source\Core\Tween.h" />
+    <ClInclude Include="source\Core\Easing.h" />
+    <ClInclude Include="source\Core\Tweener.h" />
   </ItemGroup>
 </Project>
