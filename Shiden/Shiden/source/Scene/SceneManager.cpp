@@ -29,7 +29,7 @@ SceneManager::SceneManager()
 	playerController = new PlayerController(1);
 
 	// ‰ŠúƒV[ƒ“‚ğİ’è
-	ChangeState(State::Title);
+	ChangeState(State::Game);
 }
 
 //==========================================
