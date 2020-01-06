@@ -8,6 +8,9 @@
 #include "SceneTitle.h"
 #include "SceneGame.h"
 #include "SceneResult.h"
+#include "../Camera/Camera.h"
+#include "../Effect/SpriteEffect.h"
+#include "../Player/PlayerController.h"
 
 //==========================================
 // コンストラクタ
@@ -19,6 +22,11 @@ SceneManager::SceneManager()
 	fsm[State::Title] = new SceneTitle();
 	fsm[State::Game] = new SceneGame();
 	fsm[State::Result] = new SceneResult();
+
+	// インスタンスの作成
+	camera = new Camera();
+	Camera::SetMainCamera(camera);
+	playerController = new PlayerController(1);
 
 	// 初期シーンを設定
 	ChangeState(State::Title);
@@ -36,6 +44,10 @@ SceneManager::~SceneManager()
 		p = NULL;
 	}
 	fsm.clear();
+
+	// インスタンス削除
+	SAFE_DELETE(camera);
+	SAFE_DELETE(playerController);
 }
 
 //==========================================
@@ -43,6 +55,13 @@ SceneManager::~SceneManager()
 //==========================================
 void SceneManager::Update()
 {
+	// カメラ更新
+	camera->Update();
+
+	// 情報をシェーダーに渡す
+	SpriteEffect::SetView(camera->GetViewMtx());
+	SpriteEffect::SetProjection(camera->GetProjectionMtx());
+
 	// ステートマシンの更新
 	State next = fsm[currentState]->OnUpdate(*this);
 }
@@ -52,6 +71,8 @@ void SceneManager::Update()
 //==========================================
 void SceneManager::Draw()
 {
+	Camera::MainCamera()->Set();
+
 	// ステートマシンの描画
 	fsm[currentState]->OnDraw(*this);
 }

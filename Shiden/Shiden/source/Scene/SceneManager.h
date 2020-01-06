@@ -10,6 +10,10 @@
 #include <vector>
 #include "../../Main.h"
 
+// 前方宣言
+class Camera;
+class PlayerController;
+
 //****************************************************
 // クラス定義
 //****************************************************
@@ -44,5 +48,8 @@ private:
 	using SceneState = BaseState<SceneManager, State>;
 	std::vector<SceneState*> fsm;		// ステートマシン
 
+	// 各種インスタンス
+	Camera* camera;
+	PlayerController* playerController;
 };
 #endif

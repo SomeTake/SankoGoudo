@@ -125,14 +125,29 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="source\Camera\Camera.cpp" />
     <ClCompile Include="source\Core\GameObject.cpp" />
     <ClCompile Include="source\Core\Quaternion.cpp" />
     <ClCompile Include="source\Core\Transform.cpp" />
     <ClCompile Include="source\Core\Tween.cpp" />
     <ClCompile Include="source\Core\Tweener.cpp" />
+    <ClCompile Include="source\Effect\InstancingMeshEffect.cpp" />
+    <ClCompile Include="source\Effect\RendererEffect.cpp" />
+    <ClCompile Include="source\Effect\SpriteEffect.cpp" />
     <ClCompile Include="source\Input\GamePad.cpp" />
     <ClCompile Include="source\Input\Input.cpp" />
     <ClCompile Include="source\Input\Keyboard.cpp" />
+    <ClCompile Include="source\Player\PlayerActor.cpp" />
+    <ClCompile Include="source\Player\PlayerController.cpp" />
+    <ClCompile Include="source\Resource\AnimationContainer.cpp" />
+    <ClCompile Include="source\Resource\AnimationManager.cpp" />
+    <ClCompile Include="source\Resource\AnimationResource.cpp" />
+    <ClCompile Include="source\Resource\BoardPolygon.cpp" />
+    <ClCompile Include="source\Resource\MeshContainer.cpp" />
+    <ClCompile Include="source\Resource\MeshResource.cpp" />
+    <ClCompile Include="source\Resource\MyAllocateHierarchy.cpp" />
+    <ClCompile Include="source\Resource\PolygonResource.cpp" />
+    <ClCompile Include="source\Resource\ResourceManager.cpp" />
     <ClCompile Include="source\Scene\SceneGame.cpp" />
     <ClCompile Include="source\Scene\SceneManager.cpp" />
     <ClCompile Include="source\Scene\SceneResult.cpp" />
@@ -140,6 +155,7 @@
     <ClCompile Include="source\Sound\Sound.cpp" />
     <ClCompile Include="source\System\DelayedTask.cpp" />
     <ClCompile Include="source\System\Game.cpp" />
+    <ClCompile Include="source\System\Light.cpp" />
     <ClCompile Include="source\System\RegularTask.cpp" />
     <ClCompile Include="source\System\Screen.cpp" />
     <ClCompile Include="source\System\Task.cpp" />
@@ -147,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h" />
+    <ClInclude Include="source\Camera\Camera.h" />
     <ClInclude Include="source\Core\Easing.h" />
     <ClInclude Include="source\Core\GameObject.h" />
     <ClInclude Include="source\Core\MyMath.h" />
@@ -156,9 +173,23 @@
     <ClInclude Include="source\Core\Tweener.h" />
     <ClInclude Include="source\DesignPattern\BaseSingleton.h" />
     <ClInclude Include="source\DesignPattern\BaseState.h" />
+    <ClInclude Include="source\Effect\InstancingMeshEffect.h" />
+    <ClInclude Include="source\Effect\RendererEffect.h" />
+    <ClInclude Include="source\Effect\SpriteEffect.h" />
     <ClInclude Include="source\Input\GamePad.h" />
     <ClInclude Include="source\Input\Input.h" />
     <ClInclude Include="source\Input\Keyboard.h" />
+    <ClInclude Include="source\Player\PlayerActor.h" />
+    <ClInclude Include="source\Player\PlayerController.h" />
+    <ClInclude Include="source\Resource\AnimationContainer.h" />
+    <ClInclude Include="source\Resource\AnimationManager.h" />
+    <ClInclude Include="source\Resource\AnimationResource.h" />
+    <ClInclude Include="source\Resource\BoardPolygon.h" />
+    <ClInclude Include="source\Resource\MeshContainer.h" />
+    <ClInclude Include="source\Resource\MeshResource.h" />
+    <ClInclude Include="source\Resource\MyAllocateHierarchy.h" />
+    <ClInclude Include="source\Resource\PolygonResource.h" />
+    <ClInclude Include="source\Resource\ResourceManager.h" />
     <ClInclude Include="source\Scene\SceneGame.h" />
     <ClInclude Include="source\Scene\SceneManager.h" />
     <ClInclude Include="source\Scene\SceneResult.h" />
@@ -166,10 +197,19 @@
     <ClInclude Include="source\Sound\Sound.h" />
     <ClInclude Include="source\System\DelayedTask.h" />
     <ClInclude Include="source\System\Game.h" />
+    <ClInclude Include="source\System\Light.h" />
     <ClInclude Include="source\System\RegularTask.h" />
     <ClInclude Include="source\System\Screen.h" />
     <ClInclude Include="source\System\Task.h" />
     <ClInclude Include="source\System\TaskManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shader\Sprite.fx">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">2.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">2.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Effect</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Effect</ShaderType>
+    </FxCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

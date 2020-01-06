@@ -21,6 +21,22 @@
     <ClCompile Include="source\Core\GameObject.cpp" />
     <ClCompile Include="source\Core\Tween.cpp" />
     <ClCompile Include="source\Core\Tweener.cpp" />
+    <ClCompile Include="source\Resource\AnimationManager.cpp" />
+    <ClCompile Include="source\Resource\AnimationContainer.cpp" />
+    <ClCompile Include="source\Resource\MyAllocateHierarchy.cpp" />
+    <ClCompile Include="source\Resource\ResourceManager.cpp" />
+    <ClCompile Include="source\Resource\AnimationResource.cpp" />
+    <ClCompile Include="source\Resource\PolygonResource.cpp" />
+    <ClCompile Include="source\Resource\BoardPolygon.cpp" />
+    <ClCompile Include="source\Effect\SpriteEffect.cpp" />
+    <ClCompile Include="source\Effect\InstancingMeshEffect.cpp" />
+    <ClCompile Include="source\Effect\RendererEffect.cpp" />
+    <ClCompile Include="source\Resource\MeshContainer.cpp" />
+    <ClCompile Include="source\Resource\MeshResource.cpp" />
+    <ClCompile Include="source\Player\PlayerActor.cpp" />
+    <ClCompile Include="source\Camera\Camera.cpp" />
+    <ClCompile Include="source\System\Light.cpp" />
+    <ClCompile Include="source\Player\PlayerController.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h" />
@@ -47,5 +63,24 @@
     <ClInclude Include="source\Core\Tween.h" />
     <ClInclude Include="source\Core\Easing.h" />
     <ClInclude Include="source\Core\Tweener.h" />
+    <ClInclude Include="source\Resource\AnimationManager.h" />
+    <ClInclude Include="source\Resource\AnimationContainer.h" />
+    <ClInclude Include="source\Resource\MyAllocateHierarchy.h" />
+    <ClInclude Include="source\Resource\ResourceManager.h" />
+    <ClInclude Include="source\Resource\AnimationResource.h" />
+    <ClInclude Include="source\Resource\PolygonResource.h" />
+    <ClInclude Include="source\Resource\BoardPolygon.h" />
+    <ClInclude Include="source\Effect\SpriteEffect.h" />
+    <ClInclude Include="source\Effect\RendererEffect.h" />
+    <ClInclude Include="source\Effect\InstancingMeshEffect.h" />
+    <ClInclude Include="source\Resource\MeshContainer.h" />
+    <ClInclude Include="source\Resource\MeshResource.h" />
+    <ClInclude Include="source\Player\PlayerActor.h" />
+    <ClInclude Include="source\Camera\Camera.h" />
+    <ClInclude Include="source\System\Light.h" />
+    <ClInclude Include="source\Player\PlayerController.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shader\Sprite.fx" />
   </ItemGroup>
 </Project>
