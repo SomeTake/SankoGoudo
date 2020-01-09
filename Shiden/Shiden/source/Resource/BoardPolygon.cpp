@@ -19,7 +19,7 @@ BoardPolygon::BoardPolygon() :
 	effect(nullptr)
 {
 	pDevice = GetDevice();
-	effect = new SpriteEffect();
+	effect = new SpriteEffect("Shader/Sprite.fx");
 }
 
 //==========================================

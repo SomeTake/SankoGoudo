@@ -6,6 +6,7 @@
 //=============================================================================
 #include "SceneGame.h"
 #include "../Player/PlayerController.h"
+#include "../Field/FieldController.h"
 
 //==========================================
 // 入場
@@ -21,6 +22,7 @@ SceneManager::State SceneManager::SceneGame::OnUpdate(SceneManager & entity)
 {
 	// インスタンスの更新
 	entity.playerController->Update();
+	entity.fieldController->Update();
 
 	return State::Game;
 }
@@ -31,6 +33,7 @@ SceneManager::State SceneManager::SceneGame::OnUpdate(SceneManager & entity)
 void SceneManager::SceneGame::OnDraw(SceneManager & entity)
 {
 	// フィールドの描画
+	entity.fieldController->Draw();
 
 	// メッシュの描画
 	entity.playerController->Draw();

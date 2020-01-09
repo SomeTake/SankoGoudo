@@ -37,6 +37,9 @@
     <ClCompile Include="source\Camera\Camera.cpp" />
     <ClCompile Include="source\System\Light.cpp" />
     <ClCompile Include="source\Player\PlayerController.cpp" />
+    <ClCompile Include="source\Field\FieldController.cpp" />
+    <ClCompile Include="source\Field\Ground.cpp" />
+    <ClCompile Include="source\Field\GroundChip.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h" />
@@ -79,6 +82,10 @@
     <ClInclude Include="source\Camera\Camera.h" />
     <ClInclude Include="source\System\Light.h" />
     <ClInclude Include="source\Player\PlayerController.h" />
+    <ClInclude Include="source\Field\FieldController.h" />
+    <ClInclude Include="source\Field\Ground.h" />
+    <ClInclude Include="source\Field\GroundChip.h" />
+    <ClInclude Include="source\Field\FieldPosition.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Shader\Sprite.fx" />

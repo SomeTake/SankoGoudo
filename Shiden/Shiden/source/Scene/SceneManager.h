@@ -13,6 +13,7 @@
 // 前方宣言
 class Camera;
 class PlayerController;
+class FieldController;
 
 //****************************************************
 // クラス定義
@@ -51,5 +52,6 @@ private:
 	// 各種インスタンス
 	Camera* camera;
 	PlayerController* playerController;
+	FieldController* fieldController;
 };
 #endif

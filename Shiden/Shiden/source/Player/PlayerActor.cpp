@@ -21,9 +21,9 @@ const char* PlayerActor::fileName = "data/Model/Player.x";
 //=====================================
 PlayerActor::PlayerActor()
 {
-	transform->SetPosition(D3DXVECTOR3(0.0f, 0.0f, 0.0f));
+	transform->SetPosition(D3DXVECTOR3(2500.0f, 0.0f, -2500.0f));
 	transform->SetScale(D3DXVECTOR3(1.0f, 1.0f, 1.0f));
-	transform->SetRotation(D3DXVECTOR3(0.0f, 0.0f, 0.0f));
+	transform->SetRotation(D3DXVECTOR3(0.0f, 180.0f, 0.0f));
 	SetActive(true);
 
 	// アニメーション生成

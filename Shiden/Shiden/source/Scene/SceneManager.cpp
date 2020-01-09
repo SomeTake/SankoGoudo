@@ -11,6 +11,8 @@
 #include "../Camera/Camera.h"
 #include "../Effect/SpriteEffect.h"
 #include "../Player/PlayerController.h"
+#include "../Field/FieldController.h"
+#include "../Resource/ResourceManager.h"
 
 //==========================================
 // コンストラクタ
@@ -23,10 +25,14 @@ SceneManager::SceneManager()
 	fsm[State::Game] = new SceneGame();
 	fsm[State::Result] = new SceneResult();
 
+	// リソースの読み込み
+	ResourceManager::Instance()->MakePolygon("White", "data/Texture/White.png", D3DXVECTOR2(50.0f, 50.0f));
+
 	// インスタンスの作成
 	camera = new Camera();
 	Camera::SetMainCamera(camera);
 	playerController = new PlayerController(1);
+	fieldController = new FieldController();
 
 	// 初期シーンを設定
 	ChangeState(State::Game);
@@ -48,6 +54,7 @@ SceneManager::~SceneManager()
 	// インスタンス削除
 	SAFE_DELETE(camera);
 	SAFE_DELETE(playerController);
+	SAFE_DELETE(fieldController);
 }
 
 //==========================================

@@ -134,6 +134,9 @@
     <ClCompile Include="source\Effect\InstancingMeshEffect.cpp" />
     <ClCompile Include="source\Effect\RendererEffect.cpp" />
     <ClCompile Include="source\Effect\SpriteEffect.cpp" />
+    <ClCompile Include="source\Field\FieldController.cpp" />
+    <ClCompile Include="source\Field\Ground.cpp" />
+    <ClCompile Include="source\Field\GroundChip.cpp" />
     <ClCompile Include="source\Input\GamePad.cpp" />
     <ClCompile Include="source\Input\Input.cpp" />
     <ClCompile Include="source\Input\Keyboard.cpp" />
@@ -176,6 +179,10 @@
     <ClInclude Include="source\Effect\InstancingMeshEffect.h" />
     <ClInclude Include="source\Effect\RendererEffect.h" />
     <ClInclude Include="source\Effect\SpriteEffect.h" />
+    <ClInclude Include="source\Field\FieldController.h" />
+    <ClInclude Include="source\Field\FieldPosition.h" />
+    <ClInclude Include="source\Field\Ground.h" />
+    <ClInclude Include="source\Field\GroundChip.h" />
     <ClInclude Include="source\Input\GamePad.h" />
     <ClInclude Include="source\Input\Input.h" />
     <ClInclude Include="source\Input\Keyboard.h" />

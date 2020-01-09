@@ -54,7 +54,7 @@ void Game::Update()
 //==========================================
 void Game::Draw()
 {
-	const D3DXCOLOR backColor = D3DXCOLOR(0.0f, 0.0f, 0.05f, 1.0f);
+	const D3DXCOLOR backColor = D3DXCOLOR(0.0f, 0.0f, 0.0f, 1.0f);
 	screen->DrawBegin(backColor);
 
 	RendererEffect::SetView(Camera::MainCamera()->GetViewMtx());
